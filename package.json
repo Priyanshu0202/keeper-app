@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
+    "cross-env": "^7.0.3",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-icons": "^4.10.1",
@@ -17,8 +18,8 @@
   },
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
-    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
+    "start": "cross-env react-scripts start --openssl-legacy-provider",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
