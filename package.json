@@ -19,7 +19,6 @@
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider && next dev",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
-    "start": "react-scripts start --openssl-legacy-provider",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
